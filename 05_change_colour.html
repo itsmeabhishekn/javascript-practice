@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>change colour </title>
+
+  <script>
+    function changeclr1(val)
+    {
+      document.getElementById('t1').style.borderColor="silver";
+    }
+
+    function changeclr2()
+    {
+      txt = document.getElementById('t1').value
+
+      if(txt.length==0)
+      {
+        document.getElementById('t1').style.borderColor="red"
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="t1" onkeyup="changeclr(this.value)">
+
+  <input type="button" value="submit" onclick="changeclr2()">
+</body>
+</html>
